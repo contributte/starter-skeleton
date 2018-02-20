@@ -1,6 +1,12 @@
-log/*
-temp/*
-vendor/*
-!.gitignore
+# Temps
+/var/log/*
+/var/temp/*
+
+# Composer
+/vendor/*
+
+# Apache
 !.htaccess
-app/config/config.local.neon
+
+# Nette config
+/app/config/config.local.neon
