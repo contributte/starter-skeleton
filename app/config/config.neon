@@ -1,3 +1,5 @@
+# ======================================
+# Nette ================================
 php:
 	date.timezone: Europe/Prague
 	# session.save_path: %tempDir%/session
@@ -30,13 +32,22 @@ application:
 http:
 	headers:
 		X-XSS-Protection: "1; mode=block"
-		X-Powered-By: "componette"
+		X-Powered-By: "contributte"
 
+# ======================================
+# Default parameters ===================
 parameters:
 	project:
 		error:
 			presenter: Error
 			email: webmaster@tlapnet.cz
 
+# ======================================
+# Default extensions ===================
+
+# @here
+
+# ======================================
+# Services =============================
 services:
 	router: App\Model\RouterFactory::createRouter
