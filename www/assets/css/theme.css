@@ -1,0 +1,23 @@
+body > .container {
+    padding: 60px 15px 0;
+}
+
+.header {
+    color: white;
+    background: #18aae3;
+}
+
+.header h1 {
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+.footer {
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+}
+
+.content {
+    padding: 10px;
+}
