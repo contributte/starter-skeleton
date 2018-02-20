@@ -4,8 +4,616 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed88dd2f4a613b7aeb45de7a5ba7e424",
+    "content-hash": "5d7992ab24eb7c67a2c92b2a8153015f",
     "packages": [
+        {
+            "name": "contributte/application",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/application.git",
+                "reference": "201d97224f465301f06f833908de2c147ad4deb9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/application/zipball/201d97224f465301f06f833908de2c147ad4deb9",
+                "reference": "201d97224f465301f06f833908de2c147ad4deb9",
+                "shasum": ""
+            },
+            "require": {
+                "nette/application": "^2.4.3",
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "nette/di": "^2.4.5",
+                "ninjify/nunjuck": "^0.1.4",
+                "ninjify/qa": "^0.3.3"
+            },
+            "suggest": {
+                "nette/di": "to use LinkGeneratorExtesion[CompilerExtension]"
+            },
+            "type": "library",
+            "extra": {
+                "ninjify": {
+                    "qa": {
+                        "codesniffer": {
+                            "ruleset": "nette",
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        },
+                        "codefixer": {
+                            "ruleset": "nette",
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        },
+                        "linter": {
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        }
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\Application\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Sulc",
+                    "homepage": "https://jfx.cz"
+                }
+            ],
+            "description": "Extra contrib to nette/application",
+            "homepage": "https://github.com/contributte/application",
+            "keywords": [
+                "application",
+                "component",
+                "control",
+                "nette",
+                "presenter"
+            ],
+            "time": "2017-03-15T06:54:42+00:00"
+        },
+        {
+            "name": "contributte/bootstrap",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/bootstrap.git",
+                "reference": "0ecaf585b542ff21032b383e20a3808a9cb68f08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/bootstrap/zipball/0ecaf585b542ff21032b383e20a3808a9cb68f08",
+                "reference": "0ecaf585b542ff21032b383e20a3808a9cb68f08",
+                "shasum": ""
+            },
+            "require": {
+                "nette/bootstrap": "^2.4.3",
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "nette/di": "^2.4.7",
+                "ninjify/nunjuck": "^0.1.4",
+                "ninjify/qa": "^0.3.3"
+            },
+            "suggest": {
+                "nette/di": "to use BootstrapExtension"
+            },
+            "type": "library",
+            "extra": {
+                "ninjify": {
+                    "qa": {
+                        "codesniffer": {
+                            "ruleset": "nette",
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        },
+                        "codefixer": {
+                            "ruleset": "nette",
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        },
+                        "linter": {
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        }
+                    }
+                },
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\Bootstrap\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Sulc",
+                    "homepage": "https://jfx.cz"
+                }
+            ],
+            "description": "Extra contrib to nette/boostrap",
+            "homepage": "https://github.com/contributte/bootstrap",
+            "keywords": [
+                "application",
+                "bootstrap",
+                "docker",
+                "nette"
+            ],
+            "time": "2017-05-25T08:21:22+00:00"
+        },
+        {
+            "name": "contributte/di",
+            "version": "v0.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/di.git",
+                "reference": "c114b12f6ed9b868a77b1631fb97c6b5ecbad360"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/di/zipball/c114b12f6ed9b868a77b1631fb97c6b5ecbad360",
+                "reference": "c114b12f6ed9b868a77b1631fb97c6b5ecbad360",
+                "shasum": ""
+            },
+            "require": {
+                "nette/di": "^2.4.10",
+                "nette/utils": "^2.4.8",
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "nette/reflection": "^2.4.2",
+                "nette/robot-loader": "^2.4.3",
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.4.0"
+            },
+            "suggest": {
+                "nette/reflection": "to use AutoloadExtension[CompilerExtension]",
+                "nette/robot-loader": "to use AutoloadExtension[CompilerExtension]"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\DI\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Sulc",
+                    "homepage": "https://f3l1x.io"
+                }
+            ],
+            "description": "Extra contrib to nette/di",
+            "homepage": "https://github.com/contributte/di",
+            "keywords": [
+                "dependency",
+                "inject",
+                "nette"
+            ],
+            "time": "2017-11-21T16:32:18+00:00"
+        },
+        {
+            "name": "contributte/forms",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/forms.git",
+                "reference": "2c081a504a571c5bc5b9377ad5a6727b6881927b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/forms/zipball/2c081a504a571c5bc5b9377ad5a6727b6881927b",
+                "reference": "2c081a504a571c5bc5b9377ad5a6727b6881927b",
+                "shasum": ""
+            },
+            "require": {
+                "nette/forms": "^2.4.3",
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "nette/di": "^2.4.5",
+                "ninjify/nunjuck": "^0.1.4",
+                "ninjify/qa": "^0.3.3"
+            },
+            "suggest": {
+                "nette/di": "to use FormFactoryExtension[CompilerExtension]"
+            },
+            "type": "library",
+            "extra": {
+                "ninjify": {
+                    "qa": {
+                        "codesniffer": {
+                            "ruleset": "nette",
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        },
+                        "codefixer": {
+                            "ruleset": "nette",
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        },
+                        "linter": {
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        }
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\Forms\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Sulc",
+                    "homepage": "https://jfx.cz"
+                }
+            ],
+            "description": "Extra contrib to nette/forms",
+            "homepage": "https://github.com/contributte/forms",
+            "keywords": [
+                "Forms",
+                "checkbox",
+                "inputs",
+                "nette",
+                "rules",
+                "validation"
+            ],
+            "time": "2017-01-06T19:40:53+00:00"
+        },
+        {
+            "name": "contributte/http",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/http.git",
+                "reference": "561128953c503e3472617878def0a2e2714de035"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/http/zipball/561128953c503e3472617878def0a2e2714de035",
+                "reference": "561128953c503e3472617878def0a2e2714de035",
+                "shasum": ""
+            },
+            "require": {
+                "nette/http": "^2.4.3",
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "nette/di": "^2.4.5",
+                "ninjify/nunjuck": "^0.1.4",
+                "ninjify/qa": "^0.3.3"
+            },
+            "suggest": {
+                "nette/di": "to use CurlExtension or SapiRequestExtesion [CompilerExtension]"
+            },
+            "type": "library",
+            "extra": {
+                "ninjify": {
+                    "qa": {
+                        "codesniffer": {
+                            "ruleset": "nette",
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        },
+                        "codefixer": {
+                            "ruleset": "nette",
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        },
+                        "linter": {
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        }
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\Http\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Sulc",
+                    "homepage": "https://jfx.cz"
+                }
+            ],
+            "description": "Extra contrib to nette/http",
+            "homepage": "https://github.com/contributte/http",
+            "keywords": [
+                "http",
+                "nette",
+                "request"
+            ],
+            "time": "2017-01-06T20:34:09+00:00"
+        },
+        {
+            "name": "contributte/latte",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/latte.git",
+                "reference": "2da79eb187995d58c28bd4f450d9c9585682dfdc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/latte/zipball/2da79eb187995d58c28bd4f450d9c9585682dfdc",
+                "reference": "2da79eb187995d58c28bd4f450d9c9585682dfdc",
+                "shasum": ""
+            },
+            "require": {
+                "latte/latte": "^2.4.4",
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "nette/application": "^2.4.6",
+                "nette/di": "^2.4.8",
+                "ninjify/nunjuck": "^0.1.4",
+                "ninjify/qa": "^0.4.0"
+            },
+            "suggest": {
+                "nette/di": "to use VersionExtension[CompilerExtension]"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\Latte\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Sulc",
+                    "homepage": "https://jfx.cz"
+                }
+            ],
+            "description": "Extra contrib to nette/latte",
+            "homepage": "https://github.com/contributte/latte",
+            "keywords": [
+                "extra",
+                "latte",
+                "nette"
+            ],
+            "time": "2017-06-16T11:43:22+00:00"
+        },
+        {
+            "name": "contributte/mail",
+            "version": "v0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/mail.git",
+                "reference": "562fc9ed07bfbb23740be21e0c07ae4f3c45b073"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/mail/zipball/562fc9ed07bfbb23740be21e0c07ae4f3c45b073",
+                "reference": "562fc9ed07bfbb23740be21e0c07ae4f3c45b073",
+                "shasum": ""
+            },
+            "require": {
+                "nette/mail": "^2.4.1",
+                "nette/utils": "^2.4.4",
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "nette/di": "^2.4.9",
+                "ninjify/nunjuck": "^0.1.4",
+                "ninjify/qa": "^0.4.0"
+            },
+            "suggest": {
+                "nette/di": "to use MailerExtension[CompilerExtension]"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\Mail\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Sulc",
+                    "homepage": "https://f3l1x.io"
+                }
+            ],
+            "description": "Extra contrib to nette/mail",
+            "homepage": "https://github.com/contributte/mail",
+            "keywords": [
+                "extra",
+                "latte",
+                "nette"
+            ],
+            "time": "2018-01-12T10:23:40+00:00"
+        },
+        {
+            "name": "contributte/tracy",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/tracy.git",
+                "reference": "20ce9829387461ce222847b745974f419ee94ceb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/tracy/zipball/20ce9829387461ce222847b745974f419ee94ceb",
+                "reference": "20ce9829387461ce222847b745974f419ee94ceb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.6",
+                "tracy/tracy": "~2.4.10"
+            },
+            "require-dev": {
+                "nette/di": "~2.4.10",
+                "ninjify/nunjuck": "~0.2.0",
+                "ninjify/qa": "~0.4.0"
+            },
+            "suggest": {
+                "nette/reflection": "to use AutoloadExtension[CompilerExtension]",
+                "nette/robot-loader": "to use AutoloadExtension[CompilerExtension]"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\Tracy\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Sulc",
+                    "homepage": "https://f3l1x.io"
+                }
+            ],
+            "description": "Tuned Tracy Bars/Panels/BlueScreens for easy-developing",
+            "homepage": "https://github.com/contributte/tracy",
+            "keywords": [
+                "bluescreen",
+                "develop",
+                "nette",
+                "profile",
+                "tracy"
+            ],
+            "time": "2017-11-01T08:13:34+00:00"
+        },
+        {
+            "name": "contributte/utils",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/utils.git",
+                "reference": "2b71b29a58a347e942f0c3f5ee73b6b454fecfa1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/utils/zipball/2b71b29a58a347e942f0c3f5ee73b6b454fecfa1",
+                "reference": "2b71b29a58a347e942f0c3f5ee73b6b454fecfa1",
+                "shasum": ""
+            },
+            "require": {
+                "nette/utils": "^2.4.2",
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "nette/di": "^2.4.5",
+                "ninjify/nunjuck": "^0.1.4",
+                "ninjify/qa": "^0.3.3"
+            },
+            "suggest": {
+                "nette/di": "to use DateTimeExtension[CompilerExtension]"
+            },
+            "type": "library",
+            "extra": {
+                "ninjify": {
+                    "qa": {
+                        "codesniffer": {
+                            "ruleset": "nette",
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        },
+                        "codefixer": {
+                            "ruleset": "nette",
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        },
+                        "linter": {
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        }
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\Utils\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Sulc",
+                    "homepage": "https://jfx.cz"
+                }
+            ],
+            "description": "Extra contrib to nette/utils",
+            "homepage": "https://github.com/contributte/utils",
+            "keywords": [
+                "datetime",
+                "filesystem",
+                "nette",
+                "strings",
+                "utils"
+            ],
+            "time": "2017-04-07T12:40:46+00:00"
+        },
         {
             "name": "latte/latte",
             "version": "v2.4.7",
@@ -882,36 +1490,35 @@
         },
         {
             "name": "nette/robot-loader",
-            "version": "v2.4.4",
+            "version": "v3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/robot-loader.git",
-                "reference": "1f7f8792ce4d94162959e6b766822d6051623bca"
+                "reference": "92d4b40b49d5e2d9e37fc736bbcebe6da55fa44a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/robot-loader/zipball/1f7f8792ce4d94162959e6b766822d6051623bca",
-                "reference": "1f7f8792ce4d94162959e6b766822d6051623bca",
+                "url": "https://api.github.com/repos/nette/robot-loader/zipball/92d4b40b49d5e2d9e37fc736bbcebe6da55fa44a",
+                "reference": "92d4b40b49d5e2d9e37fc736bbcebe6da55fa44a",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "nette/caching": "~2.2",
-                "nette/finder": "~2.3",
-                "nette/utils": "~2.4",
+                "nette/finder": "^2.3 || ^3.0",
+                "nette/utils": "^2.4 || ^3.0",
                 "php": ">=5.6.0"
             },
             "conflict": {
                 "nette/nette": "<2.2"
             },
             "require-dev": {
-                "nette/tester": "~2.0",
+                "nette/tester": "^2.0",
                 "tracy/tracy": "^2.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -944,20 +1551,20 @@
                 "nette",
                 "trait"
             ],
-            "time": "2017-08-14T20:23:02+00:00"
+            "time": "2017-09-26T13:42:21+00:00"
         },
         {
             "name": "nette/utils",
-            "version": "v2.4.9",
+            "version": "v2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "1e08eb4c9d26ae5aedced8260e8b4ed951ee4aa6"
+                "reference": "8a85ce76298c8a8941f912b8fa3ee93ca17d2ebc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/1e08eb4c9d26ae5aedced8260e8b4ed951ee4aa6",
-                "reference": "1e08eb4c9d26ae5aedced8260e8b4ed951ee4aa6",
+                "url": "https://api.github.com/repos/nette/utils/zipball/8a85ce76298c8a8941f912b8fa3ee93ca17d2ebc",
+                "reference": "8a85ce76298c8a8941f912b8fa3ee93ca17d2ebc",
                 "shasum": ""
             },
             "require": {
@@ -981,12 +1588,15 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
+                ],
+                "files": [
+                    "src/loader.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1023,7 +1633,7 @@
                 "utility",
                 "validation"
             ],
-            "time": "2018-02-06T15:40:36+00:00"
+            "time": "2018-02-19T14:42:42+00:00"
         },
         {
             "name": "tracy/tracy",
@@ -1091,7 +1701,81 @@
             "time": "2018-02-01T18:11:38+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "contributte/dev",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/dev.git",
+                "reference": "ec46ddfce08cd45960ae40efc5872a18e968d6a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/dev/zipball/ec46ddfce08cd45960ae40efc5872a18e968d6a2",
+                "reference": "ec46ddfce08cd45960ae40efc5872a18e968d6a2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "ninjify/nunjuck": "^0.1.4",
+                "ninjify/qa": "^0.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "ninjify": {
+                    "qa": {
+                        "codesniffer": {
+                            "ruleset": "nette",
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        },
+                        "codefixer": {
+                            "ruleset": "nette",
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        },
+                        "linter": {
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        }
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions.php",
+                    "src/shortcuts.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Sulc",
+                    "homepage": "https://jfx.cz"
+                }
+            ],
+            "description": "Tools for development",
+            "homepage": "https://github.com/contributte/dev",
+            "keywords": [
+                "development",
+                "nette",
+                "shortcuts"
+            ],
+            "time": "2017-03-12T18:43:26+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
