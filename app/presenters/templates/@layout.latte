@@ -4,24 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tlapnet Snow Web Project</title>
+    <title>{block #title}Tlapnet Snow Web Project{/}</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css"/>
+
+    <!-- Theme -->
+    <link rel="stylesheet" href="{$basePath}/assets/css/theme.css"/>
 </head>
 <body>
-<div class="container">
-    <header class="header">
-        <h1>Tlapnet Snow Web Project</h1>
-    </header>
+<header class="header">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand" n:href=":Homepage:">Tlapnet</a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#menu-collapse"
+                    aria-controls="menu-collapse"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li n:class="$presenter->isLinkCurrent(':Homepage:') ? active, nav-item">
+                        <a class="nav-link" n:href=":Homepage:">Home</a>
+                    </li>
+                    <li n:class="$presenter->isLinkCurrent(':Contact:') ? active, nav-item">
+                        <a class="nav-link" n:href=":Contact:">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main role="main" class="container">
+    <!-- Main: alerts -->
+    <section class="alerts" n:inner-foreach="$flashes as $flash">
+        <div class="alert alert-{$flash->type}" role="alert">
+            {$flash->message}
+        </div>
+    </section>
+    <!-- /Main: alerts -->
+
+    <!-- Main: content -->
     <section class="content">
         {include #content}
     </section>
-    <footer class="footer">
+    <!-- /Main: content -->
+</main>
+
+<footer class="footer">
+    <div class="container">
         <span class="text-muted">
             &copy; {=date(Y)} Tlapnet
         </span>
-    </footer>
-</div>
+    </div>
+</footer>
 
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </body>
 </html>

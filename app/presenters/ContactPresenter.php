@@ -16,7 +16,12 @@ class ContactPresenter extends BasePresenter
 		$form->addSubmit('send', 'Odeslat');
 
 		$form->onSuccess[] = function (Form $form) {
-			bdump($form->values);
+			if ($form->values->name === 'tlapnet') {
+				$this->flashMessage('Systems OK', 'success');
+				$this->redirect('Homepage:');
+			}
+
+			dump($form->values);
 		};
 
 		return $form;
