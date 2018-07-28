@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Presenters;
 
@@ -22,10 +22,7 @@ class ErrorPresenter implements IPresenter
 		$this->logger = $logger;
 	}
 
-	/**
-	 * @return IResponse
-	 */
-	public function run(Request $request)
+	public function run(Request $request): IResponse
 	{
 		$e = $request->getParameter('exception');
 
@@ -39,7 +36,7 @@ class ErrorPresenter implements IPresenter
 
 		$this->logger->log($e, ILogger::EXCEPTION);
 
-		return new CallbackResponse(function () {
+		return new CallbackResponse(function (): void {
 			require __DIR__ . '/templates/Error/500.phtml';
 		});
 	}

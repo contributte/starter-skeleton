@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Model;
 
@@ -9,10 +9,7 @@ use Nette\Application\Routers\RouteList;
 class RouterFactory
 {
 
-	/**
-	 * @return IRouter
-	 */
-	public static function createRouter()
+	public static function createRouter(): IRouter
 	{
 		$router = new RouteList;
 		$router[] = new Route('<presenter>/<action>', 'Homepage:default');
