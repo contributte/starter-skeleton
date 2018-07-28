@@ -1,6 +1,5 @@
-# Temps
-/var/log/*
-/var/temp/*
+# IDE
+.idea
 
 # Composer
 /vendor/*
