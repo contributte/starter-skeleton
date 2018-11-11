@@ -13,6 +13,10 @@ $configurator->enableTracy(__DIR__ . '/../var/log');
 $configurator->setTimeZone('Europe/Prague');
 $configurator->setTempDirectory(__DIR__ . '/../var/temp');
 
+$configurator->createRobotLoader()
+	->addDirectory(__DIR__)
+	->register();
+
 $configurator->addConfig(__DIR__ . '/config/config.neon');
 $configurator->addConfig(__DIR__ . '/config/config.local.neon');
 
