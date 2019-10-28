@@ -1,49 +1,36 @@
-# Tlapnet Snow Web Project
+<h1 align=center>Snow Project</h1>
 
-Lightweight Nette sandbox. 
+<p align=center>
+    Snow Project is starter kit project for Nette Framework with many useful libraries.
+</p>
 
-Easy to use but powerful.
+<p align=center>
+🕹 <a href="https://f3l1x.io">f3l1x.io</a> | 💻 <a href="https://github.com/f3l1x">f3l1x</a> | 🐦 <a href="https://twitter.com/xf3l1x">@xf3l1x</a>
+</p>
 
-## Contains 
+<p align=center>
+    <code>composer create-project planette/snow-project@dev acme</code>
+</p>
 
-### Backend
- 
-It's based on [Contributte](https://contributte.org/) packages.
+<p align=center>
+    <img src="https://raw.githubusercontent.com/planette/snow-project/master/.docs/screenshot1.png">
+</p>
 
-- `contributte/application`
-- `contributte/bootstrap`
-- `contributte/di`
-- `contributte/forms`
-- `contributte/http`
-- `contributte/mail`
-- `contributte/utils`
-- `contributte/latte`
-- `contributte/tracy`
-- `nette/robot-loader`
-
-We use [RobotLoader](https://doc.nette.org/cs/2.4/robotloader) for autoloading .
-
-### Frontend
-
-There is also some assets included via `cdn`.
-
-- [jQuery 3.3.1](https://jquery.com/)
-- [Bootsrap 4.1.3](https://getbootstrap.com/)
-- [Select2 4.0.5](https://select2.org/)
+-----
 
 ## Installation
 
-You will need `PHP >= 7.1` and [Composer](https://getcomposer.org/). 
+You will need `PHP 7.2+` and [Composer](https://getcomposer.org/). 
 
 Create project using composer. 
 
 ```
-composer create-project tlapnet/snow-project@dev path/to/install
+composer create-project planette/snow-project@dev acme
 ```
 
 Now you have application installed. It's time to run it.
 
-### Web Server
+## Startup
 
 The easiest way is to use php built-in web server.
 
@@ -52,3 +39,34 @@ php -S 0.0.0.0:8000 -t www
 ```
 
 Then visit [http://localhost:8000](http://localhost:8000) in your browser.
+
+## Backend
+ 
+It's based on [Contributte](https://contributte.org/) packages.
+
+- [`contributte/application`](https://github.com/contributte/application)
+- [`contributte/bootstrap`](https://github.com/contributte/bootstrap)
+- [`contributte/di`](https://github.com/contributte/di)
+- [`contributte/forms`](https://github.com/contributte/forms)
+- [`contributte/http`](https://github.com/contributte/http)
+- [`contributte/mail`](https://github.com/contributte/mail)
+- [`contributte/utils`](https://github.com/contributte/utils)
+- [`contributte/latte`](https://github.com/contributte/latte)
+- [`contributte/tracy`](https://github.com/contributte/tracy)
+- [`nette/robot-loader`](https://github.com/nette/robot-loader)
+
+We use [RobotLoader](https://doc.nette.org/cs/2.4/robotloader) for autoloading .
+
+## Frontend
+
+There is also some assets included via `cdn`.
+
+- [jQuery 3.x](https://jquery.com/)
+- [Bootsrap 4.x](https://getbootstrap.com/)
+- [Select2 4.x](https://select2.org/)
+
+## Sponsoring
+
+<a href="https://github.com/tlapnet"><img  width="200" src="https://cdn.rawgit.com/f3l1x/xsource/2463efb7/assets/tlapdev.png"></a>
+
+The development is sponsored by [Tlapnet](https://www.tlapnet.cz)
