@@ -11,7 +11,7 @@ $configurator = new Configurator;
 $configurator->enableTracy(__DIR__ . '/../var/log');
 
 $configurator->setTimeZone('Europe/Prague');
-$configurator->setTempDirectory(__DIR__ . '/../var/temp');
+$configurator->setTempDirectory(__DIR__ . '/../var/tmp');
 
 $configurator->createRobotLoader()
 	->addDirectory(__DIR__)
