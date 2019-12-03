@@ -9,7 +9,7 @@
 </p>
 
 <p align=center>
-    <code>composer create-project planette/snow-project@dev acme</code>
+    <code>composer create-project -s dev planette/snow-project acme</code>
 </p>
 
 <p align=center>
@@ -20,12 +20,12 @@
 
 ## Installation
 
-You will need `PHP 7.2+` and [Composer](https://getcomposer.org/). 
+You will need `PHP 7.2+` and [Composer](https://getcomposer.org/).
 
-Create project using composer. 
+Create project using composer.
 
 ```
-composer create-project planette/snow-project@dev acme
+composer create-project -s dev planette/snow-project acme
 ```
 
 Now you have application installed. It's time to run it.
@@ -41,7 +41,7 @@ php -S 0.0.0.0:8000 -t www
 Then visit [http://localhost:8000](http://localhost:8000) in your browser.
 
 ## Backend
- 
+
 It's based on [Contributte](https://contributte.org/) packages.
 
 - [`contributte/application`](https://github.com/contributte/application)
@@ -67,6 +67,6 @@ There is also some assets included via `cdn`.
 
 ## Sponsoring
 
-<a href="https://github.com/tlapnet"><img  width="200" src="https://cdn.rawgit.com/f3l1x/xsource/2463efb7/assets/tlapdev.png"></a>
+<a href="https://github.com/tlapnet"><img  width="200" src="https://rawcdn.githack.com/f3l1x/xsource/b2663bd230b4ca50521fe6c7c554e484dd91e24d/assets/tlapdev.png"></a>
 
-The development is sponsored by [Tlapnet](https://www.tlapnet.cz)
+The development is sponsored by [Tlapnet](https://www.tlapnet.cz).
