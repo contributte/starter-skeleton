@@ -27,8 +27,8 @@ class ErrorPresenter implements IPresenter
 		$e = $request->getParameter('exception');
 
 		if ($e instanceof BadRequestException) {
-			$this->logger->log("HTTP code {$e->getCode()}: {$e->getMessage()} in {$e->getFile()}:{$e->getLine()}", 'access');
-			list($module, , $sep) = Helpers::splitName($request->getPresenterName());
+			$this->logger->log('HTTP code ' . $e->getCode() . ': ' . $e->getMessage() . ' in ' . $e->getFile() . ' : ' . $e->getLine(), 'access');
+			[$module, , $sep] = Helpers::splitName($request->getPresenterName());
 			$errorPresenter = $module . $sep . 'Error4xx';
 
 			return new ForwardResponse($request->setPresenterName($errorPresenter));
@@ -40,4 +40,5 @@ class ErrorPresenter implements IPresenter
 			require __DIR__ . '/templates/Error/500.phtml';
 		});
 	}
+
 }
