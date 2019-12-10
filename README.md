@@ -16,6 +16,9 @@
     <img src="https://raw.githubusercontent.com/planette/snow-project/master/.docs/screenshot1.png">
 </p>
 
+[![Build Status](https://img.shields.io/travis/planette/snow-project.svg?style=flat-square)](https://travis-ci.org/planette/snow-project)
+[![Join the chat](https://img.shields.io/gitter/room/contributte/contributte.svg?style=flat-square)](http://bit.ly/ctteg)
+
 -----
 
 ## Installation
