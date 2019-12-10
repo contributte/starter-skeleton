@@ -4,7 +4,7 @@ use Nette\Configurator;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$configurator = new Configurator;
+$configurator = new Configurator();
 
 //$configurator->setDebugMode(true);
 //$configurator->setDebugMode(['10.0.0.1']);

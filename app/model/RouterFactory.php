@@ -11,9 +11,10 @@ class RouterFactory
 
 	public static function createRouter(): IRouter
 	{
-		$router = new RouteList;
+		$router = new RouteList();
 		$router[] = new Route('<presenter>/<action>', 'Homepage:default');
 
 		return $router;
 	}
+
 }
