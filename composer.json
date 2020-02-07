@@ -29,7 +29,7 @@
     "ninjify/qa": "^0.10.0",
     "ninjify/nunjuck": "^0.3.0",
     "contributte/dev": "^0.2.0",
-    "phpunit/phpunit": "^8.5.0",
+    "phpunit/phpunit": "^9.0.0",
     "phpstan/phpstan": "^0.12.0",
     "phpstan/phpstan-doctrine": "^0.12.0",
     "phpstan/phpstan-deprecation-rules": "^0.12.0",
