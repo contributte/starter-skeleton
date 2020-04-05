@@ -1,9 +1,6 @@
-.PHONY: qa lint cs cfx phpstan tests build
+.PHONY: qa dev cs cfx phpstan tests build
 
-qa: lint cs phpstan
-
-lint:
-	vendor/bin/linter app
+qa: cs phpstan
 
 cs:
 	vendor/bin/codesniffer app
@@ -24,5 +21,5 @@ tests-coverage:
 # LOCAL DEVELOPMENT #
 #####################
 
-loc-web:
+dev:
 	NETTE_DEBUG=1 NETTE_ENV=dev php -S 0.0.0.0:8000 -t www
