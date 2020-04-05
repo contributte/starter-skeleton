@@ -2,7 +2,7 @@
 
 namespace App\Presenters;
 
-class HomepagePresenter extends BasePresenter
+class HomePresenter extends BasePresenter
 {
 
 }
