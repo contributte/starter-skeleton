@@ -1843,6 +1843,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -1889,6 +1890,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
@@ -3269,16 +3271,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.1.0",
+            "version": "9.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "ef2af937ce574f215afb6dca37d583cb2964bad9"
+                "reference": "848f6521c906500e66229668768576d35de0227e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ef2af937ce574f215afb6dca37d583cb2964bad9",
-                "reference": "ef2af937ce574f215afb6dca37d583cb2964bad9",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/848f6521c906500e66229668768576d35de0227e",
+                "reference": "848f6521c906500e66229668768576d35de0227e",
                 "shasum": ""
             },
             "require": {
@@ -3352,7 +3354,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2020-04-03T05:23:04+00:00"
+            "time": "2020-04-03T14:40:04+00:00"
         },
         {
             "name": "sebastian/code-unit",
