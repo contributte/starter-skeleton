@@ -26,7 +26,7 @@
     "nette/robot-loader": "~3.3.0"
   },
   "require-dev": {
-    "ninjify/qa": "^0.11",
+    "ninjify/qa": "^0.12",
     "ninjify/nunjuck": "^0.3.0",
     "contributte/dev": "^0.2.0",
     "phpunit/phpunit": "^9.0.0",
