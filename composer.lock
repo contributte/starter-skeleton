@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6d16953ce24be2540489f91e4c06ea4",
+    "content-hash": "8a7188a6645ae0992f17ee692889a79c",
     "packages": [
         {
             "name": "contributte/application",
@@ -196,35 +196,34 @@
         },
         {
             "name": "contributte/forms",
-            "version": "v0.4.0",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/forms.git",
-                "reference": "c58723613f866ac28fbffe1f4c90530beec7d105"
+                "reference": "995d5349b3b6233808a4abc9e4324d78192e3779"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/forms/zipball/c58723613f866ac28fbffe1f4c90530beec7d105",
-                "reference": "c58723613f866ac28fbffe1f4c90530beec7d105",
+                "url": "https://api.github.com/repos/contributte/forms/zipball/995d5349b3b6233808a4abc9e4324d78192e3779",
+                "reference": "995d5349b3b6233808a4abc9e4324d78192e3779",
                 "shasum": ""
             },
             "require": {
-                "nette/forms": "~3.0.0",
-                "php": "^7.2"
+                "nette/forms": "^3.0.0",
+                "php": ">=7.2"
             },
             "conflict": {
                 "nette/di": "<3.0.0"
             },
             "require-dev": {
-                "nette/application": "~3.0.0",
-                "nette/di": "~3.0.0",
-                "ninjify/nunjuck": "^0.2",
-                "ninjify/qa": "^0.8.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11"
+                "nette/application": "^3.0.0",
+                "nette/di": "^3.0.0",
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12"
             },
             "suggest": {
                 "nette/di": "to use FormFactoryExtension[CompilerExtension]"
@@ -232,7 +231,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.5.x-dev"
+                    "dev-master": "0.6.x-dev"
                 }
             },
             "autoload": {
@@ -248,10 +247,6 @@
                 {
                     "name": "Milan Felix Šulc",
                     "homepage": "https://f3l1x.io"
-                },
-                {
-                    "name": "Marek Bartoš",
-                    "homepage": "https://marek-bartos.cz"
                 }
             ],
             "description": "Extra contrib to nette/forms",
@@ -265,7 +260,7 @@
                 "rules",
                 "validation"
             ],
-            "time": "2019-06-16T13:58:26+00:00"
+            "time": "2020-12-14T17:46:11+00:00"
         },
         {
             "name": "contributte/http",
@@ -1030,16 +1025,16 @@
         },
         {
             "name": "nette/forms",
-            "version": "v3.0.5",
+            "version": "v3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/forms.git",
-                "reference": "206edb73814871d2b22cf3c59495e3fb5453bbfe"
+                "reference": "cfe069b5880e07930e92058b774f22e491aa7b0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/forms/zipball/206edb73814871d2b22cf3c59495e3fb5453bbfe",
-                "reference": "206edb73814871d2b22cf3c59495e3fb5453bbfe",
+                "url": "https://api.github.com/repos/nette/forms/zipball/cfe069b5880e07930e92058b774f22e491aa7b0e",
+                "reference": "cfe069b5880e07930e92058b774f22e491aa7b0e",
                 "shasum": ""
             },
             "require": {
@@ -1096,7 +1091,7 @@
                 "nette",
                 "validation"
             ],
-            "time": "2020-06-06T15:13:38+00:00"
+            "time": "2020-11-02T15:52:20+00:00"
         },
         {
             "name": "nette/http",
