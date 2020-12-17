@@ -5,25 +5,31 @@
 </p>
 
 <p align=center>
-🕹 <a href="https://f3l1x.io">f3l1x.io</a> | 💻 <a href="https://github.com/f3l1x">f3l1x</a> | 🐦 <a href="https://twitter.com/xf3l1x">@xf3l1x</a>
+    Take a look at demo <a href="https://examples.contributte.org/planette/snow-project/">examples.contributte.org/planette/snow-project/</a>
 </p>
 
 <p align=center>
-    <code>composer create-project -s dev planette/snow-project acme</code>
+    <img src="https://raw.githubusercontent.com/planette/snow-project/master/.docs/assets/screenshot1.png">
 </p>
 
 <p align=center>
-    <img src="https://raw.githubusercontent.com/planette/snow-project/master/.docs/screenshot1.png">
+  <a href="https://github.com/planette/snow-project/actions"><img src="https://badgen.net/github/checks/planette/snow-project/master?cache=300"></a>
+  <a href="https://packagist.org/packages/planette/snow-project"><img src="https://badgen.net/packagist/php/planette/snow-project"></a>
+  <a href="https://github.com/planette/snow-project"><img src="https://badgen.net/github/license/planette/snow-project"></a>
+  <a href="https://bit.ly/ctteg"><img src="https://badgen.net/badge/support/gitter/cyan"></a>
+  <a href="https://bit.ly/cttfo"><img src="https://badgen.net/badge/support/forum/yellow"></a>
+  <a href="https://contributte.org/partners.html"><img src="https://badgen.net/badge/sponsor/donations/F96854"></a>
 </p>
 
-[![Build Status](https://img.shields.io/travis/planette/snow-project.svg?style=flat-square)](https://travis-ci.org/planette/snow-project)
-[![Join the chat](https://img.shields.io/gitter/room/contributte/contributte.svg?style=flat-square)](http://bit.ly/ctteg)
+<p align=center>
+Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact 👨🏻‍💻 <a href="https://f3l1x.io">f3l1x.io</a> | Twitter 🐦 <a href="https://twitter.com/contributte">@contributte</a>
+</p>
 
 -----
 
 ## Installation
 
-You will need `PHP 7.2+` and [Composer](https://getcomposer.org/).
+You will need `PHP 7.4+` and [Composer](https://getcomposer.org/).
 
 Create project using composer.
 
@@ -77,12 +83,6 @@ This package is currently maintaining by these authors.
 <a href="https://github.com/f3l1x">
     <img width="80" height="80" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=80">
 </a>
-
-## Sponsoring
-
-<a href="https://github.com/tlapnet"><img  width="200" src="https://rawcdn.githack.com/f3l1x/xsource/b2663bd230b4ca50521fe6c7c554e484dd91e24d/assets/tlapdev.png"></a>
-
-The development was sponsored by [Tlapnet](https://www.tlapnet.cz).
 
 -----
 
