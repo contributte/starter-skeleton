@@ -9,7 +9,7 @@
 </p>
 
 <p align=center>
-    <img src="https://raw.githubusercontent.com/planette/snow-project/master/.docs/assets/screenshot1.png">
+    <img src="https://raw.githubusercontent.com/planette/snow-project/master/.docs/screenshot1.png">
 </p>
 
 <p align=center>
