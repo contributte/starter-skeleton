@@ -33,7 +33,7 @@ You will need `PHP 7.4+` and [Composer](https://getcomposer.org/).
 
 Create project using composer.
 
-```
+```bash
 composer create-project -s dev planette/snow-project acme
 ```
 
@@ -43,7 +43,7 @@ Now you have application installed. It's time to run it.
 
 The easiest way is to use php built-in web server.
 
-```
+```bash
 php -S 0.0.0.0:8000 -t www
 ```
 
