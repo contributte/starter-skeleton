@@ -1,13 +1,13 @@
 {
-  "name": "planette/snow-project",
-  "description": "Snow Project is a web starter kit project for Nette Framework with many useful libraries by @f3l1x.",
+  "name": "contributte/starter-skeleton",
+  "description": "Starter project skeleton based on Nette Framework (@nette) and Contributte (@contributte) libraries by @f3l1x.",
   "keywords": [
     "php",
     "nette",
-    "planette",
     "contributte",
     "sandbox",
     "project",
+    "skeleton",
     "web"
   ],
   "license": "MIT",
