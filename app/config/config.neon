@@ -40,7 +40,7 @@ parameters:
 	project:
 		error:
 			presenter: Error
-			email: webmaster@example.tld
+			email: dev@dev.dev
 
 # ======================================
 # Default extensions ===================
