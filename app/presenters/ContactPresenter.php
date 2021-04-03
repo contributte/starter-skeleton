@@ -16,7 +16,7 @@ class ContactPresenter extends BasePresenter
 		$form->addSubmit('send', 'Odeslat');
 
 		$form->onSuccess[] = function (Form $form): void {
-			if ($form->values->name === 'Snow') {
+			if ($form->values->name === 'nette') {
 				$this->flashMessage('Systems OK', 'success');
 				$this->redirect('Home:');
 			}
