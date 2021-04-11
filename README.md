@@ -39,7 +39,7 @@ You will need `PHP 7.4+` and [Composer](https://getcomposer.org/).
 Create project using composer.
 
 ```bash
-composer create-project -s dev planette/starter-skeleton acme
+composer create-project -s dev contributte/starter-skeleton acme
 ```
 
 Now you have application installed. It's time to run it.
