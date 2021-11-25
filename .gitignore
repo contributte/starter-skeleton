@@ -8,4 +8,4 @@
 !.htaccess
 
 # Nette config
-/app/config/config.local.neon
+/app/config/local.neon
