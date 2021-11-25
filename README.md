@@ -32,7 +32,7 @@ Main goal is to provide easy-to-use starter-kit project for Nette developers.
 
 https://examples.contributte.org/starter-skeleton/
 
-## Installation
+## Installation without Docker
 
 You will need `PHP 7.4+` and [Composer](https://getcomposer.org/).
 
@@ -44,7 +44,7 @@ composer create-project -s dev contributte/starter-skeleton acme
 
 Now you have application installed. It's time to run it.
 
-## Startup
+### Startup
 
 The easiest way is to use php built-in web server.
 
@@ -52,7 +52,27 @@ The easiest way is to use php built-in web server.
 php -S 0.0.0.0:8000 -t www
 ```
 
+
 Then visit [http://localhost:8000](http://localhost:8000) in your browser.
+
+
+## Install using [docker](https://github.com/docker/docker/)
+
+1) At first, use GIT to download this project.
+
+   ```
+   git clone https://github.com/contributte/gui-skeleton.git
+   ```
+
+2) Run command:
+
+   ```
+   docker-compose up
+   ```
+
+3) Open http://localhost and enjoy!
+
+If you need enter into container (such as `composer update`) run command `docker-compose run web bash`.
 
 ## Backend
 

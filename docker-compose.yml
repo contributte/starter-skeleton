@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  web:
+    image: contributte_starter-skeleton
+    build: .docker
+    volumes:
+      - ./:/srv
+    ports:
+      - 80:80
+
+  composer:
+    image: composer:latest
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: composer install --ignore-platform-reqs
