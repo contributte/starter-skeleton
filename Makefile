@@ -1,21 +1,26 @@
-.PHONY: project install setup qa dev cs csf phpstan tests build
-
 ############################################################
 # PROJECT ##################################################
 ############################################################
+.PHONY: project install setup clean
 
 project: install setup
 
 install:
 	composer install
+	npm install
 
 setup:
-	mkdir -p var/{tmp,log}
-	chmod +0777 var/{tmp,log}
+	mkdir -p var/tmp var/log
+	chmod +0777 var/tmp var/log
+
+clean:
+	find var/tmp -mindepth 1 ! -name '.gitignore' -type f -or -type d -exec rm -rf {} +
+	find var/log -mindepth 1 ! -name '.gitignore' -type f -or -type d -exec rm -rf {} +
 
 ############################################################
 # DEVELOPMENT ##############################################
 ############################################################
+.PHONY: qa dev cs csf phpstan tests coverage dev build
 
 qa: cs phpstan
 
@@ -26,7 +31,7 @@ csf:
 	vendor/bin/codefixer app
 
 phpstan:
-	vendor/bin/phpstan analyse -l max -c phpstan.neon --memory-limit=512M app
+	vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=512M app
 
 tests:
 	echo "OK"
@@ -34,9 +39,15 @@ tests:
 coverage:
 	echo "OK"
 
-#####################
-# LOCAL DEVELOPMENT #
-#####################
-
 dev:
 	NETTE_DEBUG=1 NETTE_ENV=dev php -S 0.0.0.0:8000 -t www
+
+build:
+	echo "BUILD OK"
+
+############################################################
+# DEPLOYMENT ###############################################
+############################################################
+.PHONY: deploy
+
+deploy: clean project build
