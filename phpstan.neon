@@ -1,4 +1,11 @@
+includes:
+	- vendor/phpstan/phpstan-nette/extension.neon
+	- vendor/phpstan/phpstan-nette/rules.neon
+	- vendor/phpstan/phpstan-doctrine/extension.neon
+	- vendor/phpstan/phpstan-phpunit/rules.neon
+
 parameters:
+	level: 8
 	scanDirectories:
 		- app
 
@@ -6,8 +13,3 @@ parameters:
 		- php
 
 	ignoreErrors:
-includes:
-	- vendor/phpstan/phpstan-nette/extension.neon
-	- vendor/phpstan/phpstan-nette/rules.neon
-	- vendor/phpstan/phpstan-doctrine/extension.neon
-	- vendor/phpstan/phpstan-phpunit/rules.neon
