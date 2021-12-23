@@ -34,7 +34,7 @@ https://examples.contributte.org/starter-skeleton/
 
 ## Installation
 
-You will need `PHP 7.4+` and [Composer](https://getcomposer.org/).
+You will need `PHP 8.0+` and [Composer](https://getcomposer.org/).
 
 Create project using composer.
 
