@@ -5,9 +5,6 @@ php:
 	# session.save_path: %tempDir%/session
 	# zlib.output_compression: true
 
-latte:
-	xhtml: no
-
 session:
 	debugger: %debugMode%
 	expiration: '+14 days'
