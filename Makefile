@@ -34,10 +34,10 @@ phpstan:
 	vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=512M app
 
 tests:
-	echo "OK"
+	vendor/bin/tester -s -p php --colors 1 -C tests/E2E
 
 coverage:
-	echo "OK"
+	vendor/bin/tester -s -p phpdbg --colors 1 -C --coverage ./coverage.xml --coverage-src ./app tests
 
 dev:
 	NETTE_DEBUG=1 NETTE_ENV=dev php -S 0.0.0.0:8000 -t www
