@@ -25,20 +25,22 @@
     "contributte/latte": "^0.5.0",
     "contributte/tracy": "^0.5.0",
 
-    "nette/robot-loader": "~3.4.0"
+    "nette/robot-loader": "^3.4.0"
   },
   "require-dev": {
-    "ninjify/qa": "^0.13",
+    "ninjify/qa": "^0.14",
     "ninjify/nunjuck": "^0.4",
     "contributte/dev": "^0.3",
-    "phpunit/phpunit": "^9.0.0",
     "phpstan/phpstan": "^0.12.0",
-    "phpstan/phpstan-doctrine": "^0.12.0",
     "phpstan/phpstan-deprecation-rules": "^0.12.0",
     "phpstan/phpstan-nette": "^0.12.0",
-    "phpstan/phpstan-phpunit": "^0.12.0",
     "phpstan/phpstan-strict-rules": "^0.12.0"
   },
   "prefer-stable": true,
-  "minimum-stability": "dev"
+  "minimum-stability": "dev",
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
 }
