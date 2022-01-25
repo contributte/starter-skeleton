@@ -31,10 +31,10 @@
     "ninjify/qa": "^0.14",
     "ninjify/nunjuck": "^0.4",
     "contributte/dev": "^0.3",
-    "phpstan/phpstan": "^0.12.0",
-    "phpstan/phpstan-deprecation-rules": "^0.12.0",
-    "phpstan/phpstan-nette": "^0.12.0",
-    "phpstan/phpstan-strict-rules": "^0.12.0"
+    "phpstan/phpstan": "^1.0",
+    "phpstan/phpstan-deprecation-rules": "^1.0",
+    "phpstan/phpstan-nette": "^1.0",
+    "phpstan/phpstan-strict-rules": "^1.0"
   },
   "prefer-stable": true,
   "minimum-stability": "dev",
