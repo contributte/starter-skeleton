@@ -50,4 +50,8 @@ build:
 ############################################################
 .PHONY: deploy
 
-deploy: clean project build
+deploy:
+	$(MAKE) clean
+	$(MAKE) project
+	$(MAKE) build
+	$(MAKE) clean
