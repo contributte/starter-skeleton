@@ -1,25 +1,29 @@
 <?php declare(strict_types = 1);
 
-namespace Tests\Integration\Latte;
+namespace Tests\Cases\E2E\Latte;
 
+use App\Bootstrap;
+use Contributte\Tester\Toolkit;
 use Nette\Bridges\ApplicationLatte\Template;
 use Nette\Bridges\ApplicationLatte\TemplateFactory;
-use Nette\DI\Container;
 use Nette\Utils\Finder;
 use SplFileInfo;
 use Tester\Assert;
+use Tests\Toolkit\Tests;
 use Throwable;
 
-/** @var Container $container */
-$container = require_once __DIR__ . '/../../bootstrap.container.php';
+require_once __DIR__ . '/../../../bootstrap.php';
 
-test(function () use ($container): void {
+Toolkit::test(function (): void {
+	$container = Bootstrap::boot()->createContainer();
+
+	/** @var TemplateFactory $templateFactory */
 	$templateFactory = $container->getByType(TemplateFactory::class);
 	Assert::type(TemplateFactory::class, $templateFactory);
 
 	/** @var Template $template */
 	$template = $templateFactory->createTemplate();
-	$finder = Finder::findFiles('*.latte')->from(APP_DIR);
+	$finder = Finder::findFiles('*.latte')->from(Tests::APP_PATH);
 
 	try {
 		/** @var SplFileInfo $file */
@@ -27,6 +31,6 @@ test(function () use ($container): void {
 			$template->getLatte()->warmupCache($file->getRealPath());
 		}
 	} catch (Throwable $e) {
-		Assert::fail(sprintf('Template compilation failed ([%s] %s)', get_class($e), $e->getMessage()));
+		Assert::fail(sprintf('Template compilation failed ([%s] %s)', $e::class, $e->getMessage()));
 	}
 });
