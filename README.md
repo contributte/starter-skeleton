@@ -55,31 +55,6 @@ make dev
 
 Then visit [http://localhost:8000](http://localhost:8000) in your browser.
 
-## Backend
-
-It's based on [Contributte](https://contributte.org/) packages.
-
-- [`contributte/application`](https://github.com/contributte/application)
-- [`contributte/bootstrap`](https://github.com/contributte/bootstrap)
-- [`contributte/di`](https://github.com/contributte/di)
-- [`contributte/forms`](https://github.com/contributte/forms)
-- [`contributte/http`](https://github.com/contributte/http)
-- [`contributte/mail`](https://github.com/contributte/mail)
-- [`contributte/utils`](https://github.com/contributte/utils)
-- [`contributte/latte`](https://github.com/contributte/latte)
-- [`contributte/tracy`](https://github.com/contributte/tracy)
-- [`nette/robot-loader`](https://github.com/nette/robot-loader)
-
-This project is using [RobotLoader](https://doc.nette.org/cs/3.0/robotloader) for autoloading .
-
-## Frontend
-
-There is also some assets included via `CDN`.
-
-- [jQuery 3.x](https://jquery.com/)
-- [Bootsrap 4.x](https://getbootstrap.com/)
-- [Select2 4.x](https://select2.org/)
-
 ## Development
 
 See [how to contribute](https://contributte.org/contributing.html) to this package.
