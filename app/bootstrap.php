@@ -1,28 +1,29 @@
 <?php declare(strict_types = 1);
 
-use Nette\Configurator;
+namespace App;
 
-require __DIR__ . '/../vendor/autoload.php';
+use Contributte\Bootstrap\ExtraConfigurator;
 
-$configurator = new Configurator();
+class Bootstrap
+{
 
-//$configurator->setDebugMode(true);
-//$configurator->setDebugMode(['10.0.0.1']);
-$configurator->enableTracy(__DIR__ . '/../var/log');
+	public static function boot(): ExtraConfigurator
+	{
+		$configurator = new ExtraConfigurator();
 
-$configurator->setTimeZone('Europe/Prague');
-$configurator->setTempDirectory(__DIR__ . '/../var/tmp');
+		$configurator->setEnvDebugMode();
+		$configurator->enableTracy(__DIR__ . '/../var/log');
 
-$configurator->createRobotLoader()
-	->addDirectory(__DIR__)
-	->register();
+		$configurator->setTimeZone('Europe/Prague');
+		$configurator->setTempDirectory(__DIR__ . '/../var/tmp');
 
-$configurator->addConfig(__DIR__ . '/../config/config.neon');
+		$configurator->addConfig(__DIR__ . '/../config/config.neon');
 
-if (file_exists(__DIR__ . '/../config/local.neon')) {
-	$configurator->addConfig(__DIR__ . '/../config/local.neon');
+		if (file_exists(__DIR__ . '/../config/local.neon')) {
+			$configurator->addConfig(__DIR__ . '/../config/local.neon');
+		}
+
+		return $configurator;
+	}
+
 }
-
-$container = $configurator->createContainer();
-
-return $container;
