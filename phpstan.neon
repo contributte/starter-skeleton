@@ -1,13 +1,16 @@
 includes:
-	- vendor/phpstan/phpstan-nette/extension.neon
-	- vendor/phpstan/phpstan-nette/rules.neon
+	- vendor/contributte/phpstan/phpstan.neon
 
 parameters:
-	level: 8
+	level: 9
+	phpVersion: 80100
+
 	scanDirectories:
 		- app
 
 	fileExtensions:
 		- php
 
-	ignoreErrors:
+	paths:
+		- app
+		- .docs
