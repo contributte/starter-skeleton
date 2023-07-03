@@ -34,7 +34,7 @@ https://examples.contributte.org/starter-skeleton/
 
 ## Installation
 
-You will need `PHP 8.0+` and [Composer](https://getcomposer.org/).
+You will need `PHP 8.1+` and [Composer](https://getcomposer.org/).
 
 Create project using composer.
 
@@ -49,7 +49,8 @@ Now you have application installed. It's time to run it.
 The easiest way is to use php built-in web server.
 
 ```bash
-php -S 0.0.0.0:8000 -t www
+make dev
+# php -S 0.0.0.0:8000 -t www
 ```
 
 Then visit [http://localhost:8000](http://localhost:8000) in your browser.
