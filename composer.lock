@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "38e27aba9d307a9944923d06b1cb117b",
+    "content-hash": "35f2ad3f094d351f3ace9397417b4d67",
     "packages": [
         {
             "name": "contributte/application",
@@ -547,40 +547,36 @@
         },
         {
             "name": "contributte/tracy",
-            "version": "v0.5.1",
+            "version": "v0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/tracy.git",
-                "reference": "eefc7596f348145c23ce81653b89a68b79653e67"
+                "reference": "36b64184b8042fc59eff49a2a2d32c56c24298fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/tracy/zipball/eefc7596f348145c23ce81653b89a68b79653e67",
-                "reference": "eefc7596f348145c23ce81653b89a68b79653e67",
+                "url": "https://api.github.com/repos/contributte/tracy/zipball/36b64184b8042fc59eff49a2a2d32c56c24298fe",
+                "reference": "36b64184b8042fc59eff49a2a2d32c56c24298fe",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2",
-                "tracy/tracy": "^2.7.0"
+                "php": ">=8.1",
+                "tracy/tracy": "^2.9.0"
             },
             "conflict": {
-                "nette/di": "<3.0.0"
+                "nette/di": "<3.1.0"
             },
             "require-dev": {
-                "nette/application": "~3.0.0",
-                "nette/di": "~3.0.0",
-                "nette/http": "~3.0.1",
-                "ninjify/nunjuck": "^0.4",
-                "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-nette": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12"
+                "contributte/phpstan": "^0.1",
+                "contributte/qa": "^0.4",
+                "contributte/tester": "^0.3",
+                "mockery/mockery": "^1.5.0",
+                "nette/di": "^3.1.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.6.x-dev"
+                    "dev-master": "0.7.x-dev"
                 }
             },
             "autoload": {
@@ -596,13 +592,9 @@
                 {
                     "name": "Milan Felix Šulc",
                     "homepage": "https://f3l1x.io"
-                },
-                {
-                    "name": "Marek Bartoš",
-                    "homepage": "https://marek-bartos.cz"
                 }
             ],
-            "description": "Tuned Tracy Bars/Panels/BlueScreens for easy-developing",
+            "description": "Nette Tracy extensions for easy-developing",
             "homepage": "https://github.com/contributte/tracy",
             "keywords": [
                 "bluescreen",
@@ -614,9 +606,19 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/tracy/issues",
-                "source": "https://github.com/contributte/tracy/tree/v0.5.1"
+                "source": "https://github.com/contributte/tracy/tree/v0.6.0"
             },
-            "time": "2020-12-19T17:38:47+00:00"
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-07-31T15:00:21+00:00"
         },
         {
             "name": "contributte/utils",
@@ -1797,22 +1799,22 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.10.2",
+            "version": "v2.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "882fee7cf4258a602ad4a37461e837ed2ca1406b"
+                "reference": "ec6637866d6836ef6f8de2bab63ae7708b23bcd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/882fee7cf4258a602ad4a37461e837ed2ca1406b",
-                "reference": "882fee7cf4258a602ad4a37461e837ed2ca1406b",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/ec6637866d6836ef6f8de2bab63ae7708b23bcd7",
+                "reference": "ec6637866d6836ef6f8de2bab63ae7708b23bcd7",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-session": "*",
-                "php": ">=8.0 <8.3"
+                "php": ">=8.0 <8.4"
             },
             "conflict": {
                 "nette/di": "<3.0"
@@ -1820,6 +1822,7 @@
             "require-dev": {
                 "latte/latte": "^2.5",
                 "nette/di": "^3.0",
+                "nette/http": "^3.0",
                 "nette/mail": "^3.0",
                 "nette/tester": "^2.2",
                 "nette/utils": "^3.0",
@@ -1865,9 +1868,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/tracy/issues",
-                "source": "https://github.com/nette/tracy/tree/v2.10.2"
+                "source": "https://github.com/nette/tracy/tree/v2.10.3"
             },
-            "time": "2023-03-29T12:34:53+00:00"
+            "time": "2023-07-30T13:56:20+00:00"
         }
     ],
     "packages-dev": [
