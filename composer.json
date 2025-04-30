@@ -15,7 +15,7 @@
   "require": {
     "php": ">=8.1",
 
-    "contributte/application": "^0.5.0",
+    "contributte/application": "^0.6.0",
     "contributte/bootstrap": "^0.6.0",
     "contributte/di": "^0.5.0",
     "contributte/forms": "^0.5.0",
