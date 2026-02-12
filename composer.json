@@ -23,7 +23,7 @@
     "contributte/mail": "^0.9.0",
     "contributte/utils": "^0.6.0",
     "contributte/latte": "^0.6.0",
-    "contributte/tracy": "^0.6.0"
+    "contributte/tracy": "^0.7.0"
   },
   "require-dev": {
     "contributte/qa": "^0.4",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc9d40de5fc2b8793df5f88166a701c5",
+    "content-hash": "f5752f7a4b819698f1872672bd380699",
     "packages": [
         {
             "name": "contributte/application",
@@ -537,29 +537,29 @@
         },
         {
             "name": "contributte/tracy",
-            "version": "v0.6.0",
+            "version": "v0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/tracy.git",
-                "reference": "36b64184b8042fc59eff49a2a2d32c56c24298fe"
+                "reference": "372c112941593671712df16c89cce629618f80e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/tracy/zipball/36b64184b8042fc59eff49a2a2d32c56c24298fe",
-                "reference": "36b64184b8042fc59eff49a2a2d32c56c24298fe",
+                "url": "https://api.github.com/repos/contributte/tracy/zipball/372c112941593671712df16c89cce629618f80e8",
+                "reference": "372c112941593671712df16c89cce629618f80e8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "tracy/tracy": "^2.9.0"
             },
             "conflict": {
                 "nette/di": "<3.1.0"
             },
             "require-dev": {
-                "contributte/phpstan": "^0.1",
-                "contributte/qa": "^0.4",
-                "contributte/tester": "^0.3",
+                "contributte/phpstan": "^0.1.0",
+                "contributte/qa": "^0.4.0",
+                "contributte/tester": "^0.3.0",
                 "mockery/mockery": "^1.5.0",
                 "nette/di": "^3.1.2"
             },
@@ -596,7 +596,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/tracy/issues",
-                "source": "https://github.com/contributte/tracy/tree/v0.6.0"
+                "source": "https://github.com/contributte/tracy/tree/v0.7.0"
             },
             "funding": [
                 {
@@ -608,7 +608,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-31T15:00:21+00:00"
+            "time": "2025-12-30T17:51:52+00:00"
         },
         {
             "name": "contributte/utils",
