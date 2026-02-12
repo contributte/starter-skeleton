@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc9d40de5fc2b8793df5f88166a701c5",
+    "content-hash": "fbd3fc99d3b463f5a4b4b7c8231640ad",
     "packages": [
         {
             "name": "contributte/application",
@@ -391,30 +391,31 @@
         },
         {
             "name": "contributte/latte",
-            "version": "v0.6.1",
+            "version": "v0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/latte.git",
-                "reference": "e89045e3c2b7aea08ef48a25136f0d64cc92c290"
+                "reference": "ccbacbaa5e718ae2e7632e218ba28b868642c5c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/latte/zipball/e89045e3c2b7aea08ef48a25136f0d64cc92c290",
-                "reference": "e89045e3c2b7aea08ef48a25136f0d64cc92c290",
+                "url": "https://api.github.com/repos/contributte/latte/zipball/ccbacbaa5e718ae2e7632e218ba28b868642c5c4",
+                "reference": "ccbacbaa5e718ae2e7632e218ba28b868642c5c4",
                 "shasum": ""
             },
             "require": {
-                "latte/latte": "^3.0.12",
+                "latte/latte": "^3.1.0",
                 "php": ">=8.2"
             },
             "require-dev": {
                 "contributte/phpstan": "^0.1",
                 "contributte/qa": "^0.4",
-                "contributte/tester": "^0.4",
+                "contributte/tester": "^0.3",
                 "nette/application": "^3.1.14",
                 "nette/di": "^3.0.17"
             },
             "suggest": {
+                "erusev/parsedown-extra": "to use ParsedownExtension[CompilerExtension]",
                 "nette/di": "to use VersionExtension[CompilerExtension]"
             },
             "type": "library",
@@ -447,7 +448,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/latte/issues",
-                "source": "https://github.com/contributte/latte/tree/v0.6.1"
+                "source": "https://github.com/contributte/latte/tree/v0.7.0"
             },
             "funding": [
                 {
@@ -459,7 +460,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-11-09T12:34:06+00:00"
+            "time": "2025-12-28T15:15:52+00:00"
         },
         {
             "name": "contributte/mail",
