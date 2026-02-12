@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96e27eee1d4cb500aba406b8c0eb7465",
+    "content-hash": "cc9d40de5fc2b8793df5f88166a701c5",
     "packages": [
         {
             "name": "contributte/application",
@@ -463,32 +463,29 @@
         },
         {
             "name": "contributte/mail",
-            "version": "v0.7.2",
+            "version": "v0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/mail.git",
-                "reference": "e3a1834ab8f95743c42de866a846ec6f76faf5ab"
+                "reference": "54929d57d50e29556c7958829b825a71f90dbb61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/mail/zipball/e3a1834ab8f95743c42de866a846ec6f76faf5ab",
-                "reference": "e3a1834ab8f95743c42de866a846ec6f76faf5ab",
+                "url": "https://api.github.com/repos/contributte/mail/zipball/54929d57d50e29556c7958829b825a71f90dbb61",
+                "reference": "54929d57d50e29556c7958829b825a71f90dbb61",
                 "shasum": ""
             },
             "require": {
-                "nette/mail": "^3.1.0 || ^4.0.0",
-                "nette/utils": "^3.2.9 || ^4.0.0",
-                "php": ">=8.0"
+                "nette/mail": "^4.0.2",
+                "nette/utils": "^4.0.3",
+                "php": ">=8.2"
             },
             "require-dev": {
+                "contributte/phpstan": "^0.1.0",
                 "contributte/qa": "^0.4.0",
-                "contributte/tester": "^0.2.0",
-                "mockery/mockery": "^1.5.1",
+                "contributte/tester": "^0.4.0",
+                "mockery/mockery": "^1.6.6",
                 "nette/di": "^3.1.2",
-                "phpstan/phpstan": "^1.10.11",
-                "phpstan/phpstan-deprecation-rules": "^1.1.3",
-                "phpstan/phpstan-nette": "^1.2.4",
-                "phpstan/phpstan-strict-rules": "^1.5.1",
                 "tracy/tracy": "^2.10.2"
             },
             "suggest": {
@@ -497,7 +494,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.7.x-dev"
+                    "dev-master": "0.9.x-dev"
                 }
             },
             "autoload": {
@@ -524,7 +521,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/mail/issues",
-                "source": "https://github.com/contributte/mail/tree/v0.7.2"
+                "source": "https://github.com/contributte/mail/tree/v0.9.0"
             },
             "funding": [
                 {
@@ -536,7 +533,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-01T16:45:50+00:00"
+            "time": "2026-01-04T14:21:23+00:00"
         },
         {
             "name": "contributte/tracy",
@@ -2656,5 +2653,5 @@
         "php": "^8.4"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }
