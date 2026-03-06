@@ -2,7 +2,7 @@
 
 <p align=center>
   <a href="https://github.com/contributte/starter-skeleton/actions"><img src="https://badgen.net/github/checks/contributte/starter-skeleton/master"></a>
-  <a href="https://coveralls.io/r/contributte/starter-skeleton"><img src="https://badgen.net/coveralls/c/github/contributte/starter-skeleton"></a>
+  <a href="https://codecov.io/gh/contributte/starter-skeleton"><img src="https://badgen.net/codecov/c/github/contributte/starter-skeleton"></a>
   <a href="https://packagist.org/packages/contributte/starter-skeleton"><img src="https://badgen.net/packagist/dm/contributte/starter-skeleton"></a>
   <a href="https://packagist.org/packages/contributte/starter-skeleton"><img src="https://badgen.net/packagist/v/contributte/starter-skeleton"></a>
 </p>
