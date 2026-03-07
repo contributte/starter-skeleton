@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac10c18da9f6e2b928951ba2d0b17510",
+    "content-hash": "21906e1186e824ec6e643b2baf9ae030",
     "packages": [
         {
             "name": "contributte/application",
@@ -1841,33 +1841,33 @@
     "packages-dev": [
         {
             "name": "contributte/phpstan",
-            "version": "v0.2",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/phpstan.git",
-                "reference": "392afbf783b24bfd0af5849f5b9a72e1fe812634"
+                "reference": "73333d9c141521af59b2dc1ed04b1946b36c2723"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/phpstan/zipball/392afbf783b24bfd0af5849f5b9a72e1fe812634",
-                "reference": "392afbf783b24bfd0af5849f5b9a72e1fe812634",
+                "url": "https://api.github.com/repos/contributte/phpstan/zipball/73333d9c141521af59b2dc1ed04b1946b36c2723",
+                "reference": "73333d9c141521af59b2dc1ed04b1946b36c2723",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0",
+                "php": ">=8.2",
                 "phpstan/phpstan": "^2.0.1",
                 "phpstan/phpstan-deprecation-rules": "^2.0.0",
                 "phpstan/phpstan-nette": "^2.0.0",
                 "phpstan/phpstan-strict-rules": "^2.0.0"
             },
             "require-dev": {
-                "contributte/qa": "^0.4",
-                "contributte/tester": "^v0.3.0"
+                "contributte/qa": "^0.4.0",
+                "contributte/tester": "^0.3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.2.x-dev"
+                    "dev-master": "0.4.x-dev"
                 }
             },
             "autoload": {
@@ -1896,7 +1896,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/phpstan/issues",
-                "source": "https://github.com/contributte/phpstan/tree/v0.2"
+                "source": "https://github.com/contributte/phpstan/tree/v0.3.1"
             },
             "funding": [
                 {
@@ -1908,7 +1908,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-18T10:58:44+00:00"
+            "time": "2026-01-06T13:10:36+00:00"
         },
         {
             "name": "contributte/qa",
@@ -2277,11 +2277,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.39",
+            "version": "2.1.40",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c6f73a2af4cbcd99c931d0fb8f08548cc0fa8224",
-                "reference": "c6f73a2af4cbcd99c931d0fb8f08548cc0fa8224",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/9b2c7aeb83a75d8680ea5e7c9b7fca88052b766b",
+                "reference": "9b2c7aeb83a75d8680ea5e7c9b7fca88052b766b",
                 "shasum": ""
             },
             "require": {
@@ -2326,7 +2326,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-11T14:48:56+00:00"
+            "time": "2026-02-23T15:04:35+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
