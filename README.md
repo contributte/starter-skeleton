@@ -42,10 +42,10 @@ Create project using composer.
 composer create-project -s dev contributte/starter-skeleton acme
 cd acme
 make init
-make project
+make setup
 ```
 
-`make init` creates the ignored `config/local.neon` file from `config/local.neon.example`; place machine- and environment-specific configuration there.
+Composer installs the PHP dependencies while creating the project. `make init` creates the ignored `config/local.neon` file from `config/local.neon.example`; place machine- and environment-specific configuration there. `make setup` prepares the writable runtime directories.
 
 ## Startup
 
@@ -56,7 +56,7 @@ make dev
 # php -S 0.0.0.0:8000 -t www
 ```
 
-Then visit [http://localhost:8000](http://localhost:8000) in your browser. No Docker Compose definition is included, so the built-in server is the supported local startup path.
+Then visit [http://localhost:8000](http://localhost:8000). A successful first page displays **Hello!**. Follow **To contact form**, enter `nette`, submit the form, and verify the **Systems OK** success message.
 
 ## Commands
 
