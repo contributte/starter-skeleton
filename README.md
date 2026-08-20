@@ -40,9 +40,12 @@ Create project using composer.
 
 ```bash
 composer create-project -s dev contributte/starter-skeleton acme
+cd acme
+make init
+make setup
 ```
 
-Now you have application installed. It's time to run it.
+Composer installs the PHP dependencies while creating the project. `make init` creates the ignored `config/local.neon` file from `config/local.neon.example`; place machine- and environment-specific configuration there. `make setup` prepares the writable runtime directories.
 
 ## Startup
 
@@ -53,7 +56,20 @@ make dev
 # php -S 0.0.0.0:8000 -t www
 ```
 
-Then visit [http://localhost:8000](http://localhost:8000) in your browser.
+Then visit [http://localhost:8000](http://localhost:8000). A successful first page displays **Hello!**. Follow **To contact form**, enter `nette`, submit the form, and verify the **Systems OK** success message.
+
+## Commands
+
+```bash
+make qa       # coding standard and static analysis
+make tests    # run Tester tests
+make csf      # fix coding style
+make clean    # remove temporary files and logs
+```
+
+## Configuration
+
+Shared application configuration is in `config/config.neon`; local overrides belong in `config/local.neon` after running `make init`.
 
 ## Development
 
